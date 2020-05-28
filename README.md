@@ -1,2 +1,2 @@
-# itu-merit-calculator
+# Information Technology University (ITU) Merit Calculator
  
