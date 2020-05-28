@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="Hamza Shafique" />
+    <meta
+      name="description"
+      content="Calculate your aggregate or your merit for getting admission in Information Technology University (ITU) by entering your marks, 2020"
+    />
+    <meta
+      name="keywords"
+      content="ITU admission, ITU Merit, CS Merit, EE Merit, EDS Merit, MNT Merit, computer science Merit, engineering Merit, ITU aggregate engineering, last merit position ITU, 2020"
+    />
+    <title>ITU Merit/Aggregate Calculator</title>
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Fonts CSS-->
+    <link rel="stylesheet" href="css/heading.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <!-- <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-145240864-1');
+    </script> -->
+  </head>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">ITU Merit Calculator</a>
+        <button
+          class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded-sm"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded-sm js-scroll-trigger" href="#bs">BS</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded-sm js-scroll-trigger" href="#help">HELP</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded-sm js-scroll-trigger" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded-sm js-scroll-trigger" href="#faqs">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="bannerCarouselIndicators" class="mhead carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#bannerCarouselIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#bannerCarouselIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="assets/img/slides/admissions-1.jpg" alt="Admissions open 2020" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/img/slides/admissions-2.jpg" alt="Second slide" />
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#bannerCarouselIndicators" role="button" data-slide="prev">
+        <span class="mcarousel-control-icon carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#bannerCarouselIndicators" role="button" data-slide="next">
+        <span class="mcarousel-control-icon carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </header>
+
+    <section id="bs" class="page-section bg-secondary text-white mb-0">
+      <div class="container">
+        <!-- About Section Heading-->
+        <div class="text-center">
+          <h2 class="page-section-heading d-inline-block text-white">BS Merit</h2>
+        </div>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <form>
+          <div class="form-group row">
+            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
+              >FSC Marks</label
+            >
+            <div class="col-sm-12 col-md-5">
+              <input
+                type="number"
+                id="part1"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Obtained Marks in FSC"
+                required
+                min="0"
+              />
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <input
+                type="number"
+                id="part1total"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Total Marks in FSC"
+                required
+                min="0"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
+              >Matric Marks</label
+            >
+            <div class="col-sm-12 col-md-5">
+              <input
+                type="number"
+                id="matric"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Obtained Marks in Matric"
+                required
+                min="0"
+              />
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <input
+                type="number"
+                id="matrictotal"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Total Marks in Matric"
+                required
+                min="0"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
+              >ITU/SAT(1) Marks</label
+            >
+            <div class="col-sm-12 col-md-5">
+              <input
+                type="number"
+                id="test"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Obtained Marks in ITU/SAT(1)"
+                required
+                min="0"
+              />
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <input
+                type="number"
+                id="testtotal"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Total Marks in ITU/SAT(1)"
+                required
+                min="0"
+              />
+            </div>
+          </div>
+          <div id="BSResult" class="text-center"></div>
+          <div class="m-5 text-center">
+            <button
+              type="submit"
+              onclick="calculateBSMerit(event)"
+              class="btn btn-primary bg-primary btn-lg rounded-sm text-white"
+            >
+              Calculate
+            </button>
+          </div>
+        </form>
+        <div class="font-weight-bolder">
+          Note: There will be 2% deduction from Academic Marks for each late session for up to 5 late sessions.
+        </div>
+        <br />
+        <div class="font-italic">
+          Last Updated: June, 2020
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="help">
+      <div class="container">
+        <!-- Contact Section Heading-->
+        <div class="text-center">
+          <h2 class="page-section-heading text-secondary d-inline-block mb-0">HELP</h2>
+        </div>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Content-->
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon-contact mb-3"><i class="fab fa-facebook"></i></div>
+              <div class="text-muted">Facebook Group (Non-official)</div>
+              <a href="//www.fb.com/groups/ITU.help.center/" class="lead font-weight-bold">ITU Help Center</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon-contact mb-3"><i class="fa fa-phone"></i></div>
+              <div class="text-muted">UAN</div>
+              <div class="lead font-weight-bold">(042)-111-111-ITU (488)</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
+              <div class="text-muted">Email</div>
+              <a class="lead font-weight-bold" href="mailto:admission@itu.edu.pk">admission@itu.edu.pk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <!-- About Section Heading-->
+        <div class="text-center">
+          <h2 class="page-section-heading d-inline-block text-white">ABOUT</h2>
+        </div>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">
+              Calculate your aggregate and merit for admission in Information Technology University (ITU). The
+              Information Technology University is a public sector university located in Lahore, Pakistan focused on the
+              study of Computer Science, Electrical Engineering, Management & Technology and Data Science
+            </p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">
+              Using ITU Merit Calculator you can calculate your aggregate. Everything is taken care of already, just
+              enter your marks and calculate your merit marks
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section mb-0" id="faqs">
+      <div class="container">
+        <!-- FAQs Section Heading-->
+        <div class="text-center">
+          <h2 class="page-section-heading text-secondary d-inline-block mb-0">FAQs</h2>
+        </div>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- FAQs Section Content-->
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading p-3" role="tab" id="heading3">
+              <h4 class="faq-title">
+                <a
+                  class="lead font-weight-bold"
+                  class="collapsed"
+                  role="button"
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#faq1"
+                  aria-expanded="true"
+                  aria-controls="faq1"
+                >
+                  Q: Is ITU is HEC and PEC recognized university?
+                  <i class="ml-2 fas fa-lg fa-angle-down rotate-icon"></i>
+                </a>
+              </h4>
+            </div>
+            <div id="faq1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body px-3 mb-4">
+                <p class="lead font-weight-normal">
+                  Yes, ITU is recognised by the Higher Education Commission (HEC) and accredited by the Pakistan
+                  Engineering Council (PEC).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading p-3" role="tab" id="heading3">
+              <h4 class="faq-title">
+                <a
+                  class="lead font-weight-bold"
+                  class="collapsed"
+                  role="button"
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#faq2"
+                  aria-expanded="true"
+                  aria-controls="faq1"
+                >
+                  Q: Does ITU offer admissions for the Spring semester?
+                  <i class="ml-2 fas fa-lg fa-angle-down rotate-icon"></i>
+                </a>
+              </h4>
+            </div>
+            <div id="faq2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body px-3 mb-4">
+                <p class="lead font-weight-normal">
+                  Only EMBITE offers admissions in the Spring semester. All other programs offer admission for the Fall
+                  semester.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading p-3" role="tab" id="heading3">
+              <h4 class="faq-title">
+                <a
+                  class="lead font-weight-bold"
+                  class="collapsed"
+                  role="button"
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#faq3"
+                  aria-expanded="true"
+                  aria-controls="faq3"
+                >
+                  Q: What are the timings for the undergraduate programs?
+                  <i class="ml-2 fas fa-lg fa-angle-down rotate-icon"></i>
+                </a>
+              </h4>
+            </div>
+            <div id="faq3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body px-3 mb-4">
+                <p class="lead font-weight-normal">
+                  Classes for the undergraduate programs are held from 8:30am to 5pm.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading p-3" role="tab" id="heading3">
+              <h4 class="faq-title">
+                <a
+                  class="lead font-weight-bold"
+                  class="collapsed"
+                  role="button"
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#faq4"
+                  aria-expanded="true"
+                  aria-controls="faq4"
+                >
+                  Q: What are the timings for the graduate program?
+                  <i class="ml-2 fas fa-lg fa-angle-down rotate-icon"></i>
+                </a>
+              </h4>
+            </div>
+            <div id="faq4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body px-3 mb-4">
+                <p class="lead font-weight-normal">
+                  Classes for the graduate programs are held during weekdays from 5pm to 9pm. EMBITE classes are held on
+                  weekends.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading p-3" role="tab" id="heading3">
+              <h4 class="faq-title">
+                <a
+                  class="lead font-weight-bold"
+                  class="collapsed"
+                  role="button"
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#faq5"
+                  aria-expanded="true"
+                  aria-controls="faq5"
+                >
+                  Q: Does ITU provide hostel facility?
+                  <i class="ml-2 fas fa-lg fa-angle-down rotate-icon"></i>
+                </a>
+              </h4>
+            </div>
+            <div id="faq5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body px-3 mb-4">
+                <p class="lead font-weight-normal">
+                  Presently, ITU does not provide hostel facilities.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading p-3" role="tab" id="heading3">
+              <h4 class="faq-title">
+                <a
+                  class="lead font-weight-bold"
+                  class="collapsed"
+                  role="button"
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#faq6"
+                  aria-expanded="true"
+                  aria-controls="faq6"
+                >
+                  Q: Does ITU give any transport facility to the students?
+                  <i class="ml-2 fas fa-lg fa-angle-down rotate-icon"></i>
+                </a>
+              </h4>
+            </div>
+            <div id="faq6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body px-3 mb-4">
+                <p class="lead font-weight-normal">
+                  ITU does not provide any transport facility to students.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading p-3" role="tab" id="heading3">
+              <h4 class="faq-title">
+                <a
+                  class="lead font-weight-bold"
+                  class="collapsed"
+                  role="button"
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#faq7"
+                  aria-expanded="true"
+                  aria-controls="faq7"
+                >
+                  Q: Where is the ITU Admissions Test held?
+                  <i class="ml-2 fas fa-lg fa-angle-down rotate-icon"></i>
+                </a>
+              </h4>
+            </div>
+            <div id="faq7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body px-3 mb-4">
+                <p class="lead font-weight-normal">
+                  The ITU Admissions Test is held on campus at the Arfa Software Technology Park, Lahore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Location-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="mb-4">LOCATION</h4>
+            <p class="pre-wrap lead mb-0">346-B, Ferozpur Road, Lahore, Pakistan</p>
+          </div>
+          <!-- Footer Social Icons-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="mb-4">AROUND THE WEB</h4>
+            <a class="btn btn-outline-light btn-social mx-1" href="//www.fb.com/ITU.punjab"
+              ><i class="fab fa-fw fa-facebook-f"></i></a
+            ><a class="btn btn-outline-light btn-social mx-1" href="//twitter.com/ITUPunjab"
+              ><i class="fab fa-fw fa-twitter"></i></a
+            ><a class="btn btn-outline-light btn-social mx-1" href="//itu.edu.pk"><i class="fa fa-globe-europe"></i></a
+            ><a class="btn btn-outline-light btn-social mx-1" href="//vimeo.com/user19163010"
+              ><i class="fab fa-fw fa-vimeo"></i
+            ></a>
+          </div>
+          <!-- Footer About Text-->
+          <div class="col-lg-4">
+            <h4 class="mb-4">ABOUT</h4>
+            <p class="pre-wrap lead mb-0">
+              ITU Merit Calculator is a free online tool created to help students that seek admission in ITU
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright Section-->
+    <section class="copyright py-4 text-center text-white">
+      <small>Created by <a href="//www.fb.com/who.is.hamza" class="profile-link">Hamza Shafique</a> </small>
+    </section>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    <div class="scroll-to-top d-lg-none position-fixed">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"
+        ><i class="fa fa-chevron-up"></i
+      ></a>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <!-- <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script> -->
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/aggregate.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145240864-1"></script> -->
+  </body>
+</html>
