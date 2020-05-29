@@ -56,6 +56,9 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded-sm js-scroll-trigger" href="#bs">BS</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded-sm js-scroll-trigger" href="#ms">MS</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded-sm js-scroll-trigger" href="#help">HELP</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
@@ -92,17 +95,17 @@
       </a>
     </header>
 
-    <section id="bs" class="page-section bg-secondary text-white mb-0">
+    <section id="bs" class="page-section text-secondary mb-0">
       <div class="container">
         <!-- About Section Heading-->
         <div class="text-center">
-          <h2 class="page-section-heading d-inline-block text-white">BS Merit</h2>
+          <h2 class="page-section-heading d-inline-block text-secondary">BS Merit</h2>
         </div>
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-          <div class="divider-custom-line"></div>
+          <div class="divider-custom-line bg-secondary"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star text-secondary"></i></div>
+          <div class="divider-custom-line bg-secondary"></div>
         </div>
 
         <form>
@@ -123,7 +126,7 @@
             <div class="col-sm-12 col-md-5">
               <input
                 type="number"
-                id="part1total"
+                id="part1Total"
                 class="form-control rounded-sm mb-1 p-4"
                 placeholder="Total Marks in FSC"
                 required
@@ -148,7 +151,7 @@
             <div class="col-sm-12 col-md-5">
               <input
                 type="number"
-                id="matrictotal"
+                id="matricTotal"
                 class="form-control rounded-sm mb-1 p-4"
                 placeholder="Total Marks in Matric"
                 required
@@ -163,7 +166,7 @@
             <div class="col-sm-12 col-md-5">
               <input
                 type="number"
-                id="test"
+                id="BSTest"
                 class="form-control rounded-sm mb-1 p-4"
                 placeholder="Obtained Marks in ITU/SAT(1)"
                 required
@@ -173,7 +176,7 @@
             <div class="col-sm-12 col-md-5">
               <input
                 type="number"
-                id="testtotal"
+                id="BSTestTotal"
                 class="form-control rounded-sm mb-1 p-4"
                 placeholder="Total Marks in ITU/SAT(1)"
                 required
@@ -195,6 +198,106 @@
         <div class="font-weight-bolder">
           Note: There will be 2% deduction from Academic Marks for each late session for up to 5 late sessions.
         </div>
+        <br />
+        <div class="font-italic">
+          Last Updated: June, 2020
+        </div>
+      </div>
+    </section>
+
+    <section id="ms" class="page-section bg-secondary text-white mb-0">
+      <div class="container">
+        <!-- About Section Heading-->
+        <div class="text-center">
+          <h2 class="page-section-heading d-inline-block text-white">MS Merit</h2>
+        </div>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <form>
+          <div class="form-group row">
+            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
+              >Undergraduate CGPA</label
+            >
+            <div class="col-sm-12 col-md-10">
+              <input
+                type="number"
+                id="undergrad"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Undergraduate CGPA (out of 4.0)"
+                required
+                min="0"
+                max="4.0"
+                step="0.01"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
+              >ITU Test Marks</label
+            >
+            <div class="col-sm-12 col-md-5">
+              <input
+                type="number"
+                id="MSTest"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Obtained Marks in ITU Test"
+                required
+                min="0"
+              />
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <input
+                type="number"
+                id="MSTestTotal"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Total Marks in ITU Test"
+                required
+                min="0"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
+              >Interview Marks</label
+            >
+            <div class="col-sm-12 col-md-5">
+              <input
+                type="number"
+                id="interview"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Obtained Marks in Interview"
+                required
+                min="0"
+                step="0.1"
+              />
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <input
+                type="number"
+                id="interviewTotal"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Total Marks in Interview"
+                required
+                min="0"
+              />
+            </div>
+          </div>
+          <div id="MSResult" class="text-center"></div>
+          <div class="m-5 text-center">
+            <button
+              type="submit"
+              onclick="calculateMSMerit(event)"
+              class="btn btn-primary bg-primary btn-lg rounded-sm text-white"
+            >
+              Calculate
+            </button>
+          </div>
+        </form>
         <br />
         <div class="font-italic">
           Last Updated: June, 2020
@@ -498,8 +601,8 @@
           <!-- Footer About Text-->
           <div class="col-lg-4">
             <h4 class="mb-4">ABOUT</h4>
-            <p class="pre-wrap lead mb-0">
-              ITU Merit Calculator is a free online tool created to help students that seek admission in ITU
+            <p class="lead mb-0">
+              ITU Merit Calculator is a free online tool created to help students who seek admission in ITU
             </p>
           </div>
         </div>
