@@ -4,6 +4,7 @@ var CACHE_NAME = APP_PREFIX + VERSION;
 var URLS = [
   // Add URL you want to cache in this list.
   '/itu-merit-calculator/css/styles.min.css',
+  '/itu-merit-calculator/css/heading.css',
   '/itu-merit-calculator/css/body.min.css',
   '/itu-merit-calculator/index.html',
 ];
