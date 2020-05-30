@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="author" content="Hamza Shafique" />
+    <link rel="canonical" href="https://hamza-56.github.io/itu-merit-calculator/" />
     <meta
       name="description"
       content="Calculate your aggregate or your merit for getting admission in Information Technology University (ITU) by entering your marks, 2020"
@@ -14,18 +15,15 @@
     />
     <title>ITU Merit/Aggregate Calculator</title>
     <!-- Font Awesome icons (free version)-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <!-- Fonts CSS-->
-    <link rel="stylesheet" href="css/heading.css" />
-    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/heading.min.css" />
+    <link rel="stylesheet" href="css/body.min.css" />
 
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145240864-1"></script>
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-145240864-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -34,6 +32,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-145240864-1');
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
   </head>
   <body id="page-top">
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
@@ -629,6 +628,12 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="js/aggregate.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/itu-merit-calculator/sw.js', { scope: '/itu-merit-calculator/' });
+        });
+      }
+    </script>
   </body>
 </html>
