@@ -1,12 +1,21 @@
 var APP_PREFIX = 'ITU_MERIT_CALCULATOR';
-var VERSION = '1';
-var CACHE_NAME = APP_PREFIX + VERSION;
+var VERSION = 'Version_1.0';
+var CACHE_NAME = APP_PREFIX + '-' + VERSION;
 var URLS = [
-  // Add URL you want to cache in this list.
+  '/itu-merit-calculator/index.html',
+
   '/itu-merit-calculator/css/styles.min.css',
   '/itu-merit-calculator/css/heading.css',
   '/itu-merit-calculator/css/body.min.css',
-  '/itu-merit-calculator/index.html',
+
+  '/itu-merit-calculator/js/jquery/3.4.1/jquery.min.js',
+  '/itu-merit-calculator/js/bootstrap/4.4.1/bootstrap.bundle.min.js',
+  '/itu-merit-calculator/js/jquery-easing/1.4.1/jquery.easing.min.js',
+
+  '/itu-merit-calculator/js/scripts.js',
+  '/itu-merit-calculator/js/aggregate.js',
+
+  '/itu-merit-calculator/manifest.json',
 ];
 
 // Respond with cached resources

@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="author" content="Hamza Shafique" />
+    <meta name="theme-color" content="#2c2b7c" />
+    <link rel="icon" sizes="29x29" href="assets/img/icons/icon-29x29.png" />
     <link rel="canonical" href="https://hamza-56.github.io/itu-merit-calculator/" />
     <link rel="manifest" href="/itu-merit-calculator/manifest.json" />
     <meta
@@ -16,7 +18,11 @@
     />
     <title>ITU Merit/Aggregate Calculator</title>
     <!-- Font Awesome icons (free version)-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script
+      defer
+      src="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.min.css" rel="stylesheet" />
     <!-- Fonts CSS-->
@@ -115,6 +121,7 @@
             >
             <div class="col-sm-12 col-md-5">
               <input
+                aria-label="Inter part 1 obtained"
                 type="number"
                 id="part1"
                 class="form-control rounded-sm mb-1 p-4"
@@ -125,6 +132,7 @@
             </div>
             <div class="col-sm-12 col-md-5">
               <input
+                aria-label="Inter part 1 total"
                 type="number"
                 id="part1Total"
                 class="form-control rounded-sm mb-1 p-4"
@@ -140,6 +148,7 @@
             >
             <div class="col-sm-12 col-md-5">
               <input
+                aria-label="Matric obtained"
                 type="number"
                 id="matric"
                 class="form-control rounded-sm mb-1 p-4"
@@ -150,6 +159,7 @@
             </div>
             <div class="col-sm-12 col-md-5">
               <input
+                aria-label="Matric total"
                 type="number"
                 id="matricTotal"
                 class="form-control rounded-sm mb-1 p-4"
@@ -161,24 +171,26 @@
           </div>
           <div class="form-group row">
             <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
-              >ITU/SAT(1) Marks</label
+              >ITU/SAT Marks</label
             >
             <div class="col-sm-12 col-md-5">
               <input
+                aria-label="ITU/SAT obtained"
                 type="number"
                 id="BSTest"
                 class="form-control rounded-sm mb-1 p-4"
-                placeholder="Obtained Marks in ITU/SAT(1)"
+                placeholder="Obtained Marks in ITU/SAT"
                 required
                 min="0"
               />
             </div>
             <div class="col-sm-12 col-md-5">
               <input
+                aria-label="ITU/SAT total"
                 type="number"
                 id="BSTestTotal"
                 class="form-control rounded-sm mb-1 p-4"
-                placeholder="Total Marks in ITU/SAT(1)"
+                placeholder="Total Marks in ITU/SAT"
                 required
                 min="0"
               />
@@ -225,6 +237,7 @@
             >
             <div class="col-sm-12 col-md-10">
               <input
+                aria-label="Undergraduate obtained GPA"
                 type="number"
                 id="undergrad"
                 class="form-control rounded-sm mb-1 p-4"
@@ -242,6 +255,7 @@
             >
             <div class="col-sm-12 col-md-5">
               <input
+                aria-label="MS test obtained"
                 type="number"
                 id="MSTest"
                 class="form-control rounded-sm mb-1 p-4"
@@ -252,6 +266,7 @@
             </div>
             <div class="col-sm-12 col-md-5">
               <input
+                aria-label="MS test total"
                 type="number"
                 id="MSTestTotal"
                 class="form-control rounded-sm mb-1 p-4"
@@ -267,6 +282,7 @@
             >
             <div class="col-sm-12 col-md-5">
               <input
+                aria-label="Interview obtained"
                 type="number"
                 id="interview"
                 class="form-control rounded-sm mb-1 p-4"
@@ -278,6 +294,7 @@
             </div>
             <div class="col-sm-12 col-md-5">
               <input
+                aria-label="Interview total"
                 type="number"
                 id="interviewTotal"
                 class="form-control rounded-sm mb-1 p-4"
@@ -589,14 +606,42 @@
           <!-- Footer Social Icons-->
           <div class="col-lg-4 mb-5 mb-lg-0">
             <h4 class="mb-4">AROUND THE WEB</h4>
-            <a class="btn btn-outline-light btn-social mx-1" href="//www.fb.com/ITU.punjab"
-              ><i class="fab fa-fw fa-facebook-f"></i></a
-            ><a class="btn btn-outline-light btn-social mx-1" href="//twitter.com/ITUPunjab"
-              ><i class="fab fa-fw fa-twitter"></i></a
-            ><a class="btn btn-outline-light btn-social mx-1" href="//itu.edu.pk"><i class="fa fa-globe-europe"></i></a
-            ><a class="btn btn-outline-light btn-social mx-1" href="//vimeo.com/user19163010"
-              ><i class="fab fa-fw fa-vimeo"></i
-            ></a>
+            <a
+              aria-label="Facebook"
+              target="_blank"
+              rel="noreferrer"
+              class="btn btn-outline-light btn-social mx-1"
+              href="//www.fb.com/ITU.punjab"
+            >
+              <i class="fab fa-fw fa-facebook-f"></i>
+            </a>
+            <a
+              aria-label="Twitter"
+              target="_blank"
+              rel="noreferrer"
+              class="btn btn-outline-light btn-social mx-1"
+              href="//twitter.com/ITUPunjab"
+            >
+              <i class="fab fa-fw fa-twitter"></i>
+            </a>
+            <a
+              aria-label="Website"
+              target="_blank"
+              rel="noreferrer"
+              class="btn btn-outline-light btn-social mx-1"
+              href="//itu.edu.pk"
+            >
+              <i class="fa fa-globe-europe"></i>
+            </a>
+            <a
+              aria-label="Vimeo"
+              target="_blank"
+              rel="noreferrer"
+              class="btn btn-outline-light btn-social mx-1"
+              href="//vimeo.com/user19163010"
+            >
+              <i class="fab fa-fw fa-vimeo"></i>
+            </a>
           </div>
           <!-- Footer About Text-->
           <div class="col-lg-4">
@@ -610,19 +655,19 @@
     </footer>
     <!-- Copyright Section-->
     <section class="copyright py-4 text-center text-white">
-      <small>Created by <a href="//www.fb.com/who.is.hamza" class="profile-link">Hamza Shafique</a> </small>
+      <small>Developed by <a href="//www.fb.com/who.is.hamza" class="profile-link">Hamza Shafique</a> </small>
     </section>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     <div class="scroll-to-top d-lg-none position-fixed">
-      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"
-        ><i class="fa fa-chevron-up"></i
-      ></a>
+      <a aria-label="Scroll to top" class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
     </div>
     <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap/4.4.1/bootstrap.bundle.min.js"></script>
     <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="js/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Contact form JS-->
     <!-- <script src="assets/mail/jqBootstrapValidation.js"></script>
     <script src="assets/mail/contact_me.js"></script> -->
