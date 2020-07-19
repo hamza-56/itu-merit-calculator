@@ -47,7 +47,6 @@
   <body id="page-top">
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
       <div class="container">
-        <!-- <a href="//hamza-56.github.io/itu-merit-calculator" ><div id="logo"><img src="/assets/img/icons/icon-50x50.png" alt="logo"></div></a> -->
         <a class="navbar-brand js-scroll-trigger" href="#page-top">ITU Merit Calculator</a>
         <button
           class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded-sm"
@@ -68,9 +67,6 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded-sm js-scroll-trigger" href="#ms">MS</a>
             </li>
-            <!-- <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded-sm js-scroll-trigger" href="#phd">PhD</a>
-            </li> -->
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded-sm js-scroll-trigger" href="#help">HELP</a>
             </li>
@@ -122,9 +118,7 @@
           <div class="divider-custom-icon"><i class="fas fa-star text-secondary"></i></div>
           <div class="divider-custom-line bg-secondary"></div>
         </div>
-       
         <div class="col-md-12 col-sm-12 col-xs-12">
-          <h3 class="text-center">Important Notice</h3>
           <div class="table-responsive">
             <div id="table-deadline">
               <p style="font-size: 16px;">
@@ -140,7 +134,6 @@
                 <li>BS Economics with Data Science</li>
                 <li>BS Management &amp; Technology</li>
                 <li>All MS programs</li>
-                <li>EMBITE</li>
               </ul>
               <p style="font-size: 16px;">
                 The admissions process for PhD will remain unchanged, there will be a test as well as interviews.
@@ -155,7 +148,7 @@
                   <tr>
                     <td width="31">1.</td>
                     <td width="296">Online Admissions Deadline (MS/BS/PhD/EMBITE)</td>
-                    <td width="142" style="vertical-align: middle; text-align: center;"><b>Friday, 24 July</b></td>
+                    <td width="142"><b>Friday, 24 July</b></td>
                   </tr>
 
                   <tr>
@@ -165,7 +158,7 @@
                       <br />
                       <p class="text-right">(for PhD programs only)</p>
                     </td>
-                    <td width="142" style="vertical-align: middle; text-align: center;"><b>August</b></td>
+                    <td width="142"><b>August</b></td>
                   </tr>
 
                   <tr>
@@ -173,7 +166,7 @@
                     <td width="296">
                       Interviews
                       <p class="text-center">
-                        <b>Undergraduate<i> (following programs only)</i></b>
+                        <b>Undergraduate<i>(following programs only)</i></b>
                         <br />
                         BS Management and Technology
                         <br />
@@ -190,21 +183,19 @@
                         PhD Programs
                       </p>
                     </td>
-                    <td width="142" style="vertical-align: middle; text-align: center;"><b>Mid August</b></td>
+                    <td width="142"><b>Mid August</b></td>
                   </tr>
 
                   <tr>
                     <td width="31">4.</td>
                     <td width="296">Merit List</td>
-                    <td width="142" style="vertical-align: middle; text-align: center;">
-                      <b>Mon. 17 - Mon. 24 August</b>
-                    </td>
+                    <td width="142"><b>17 - 24 August</b></td>
                   </tr>
 
                   <tr>
                     <td width="31">5.</td>
                     <td width="296">Classes Commence</td>
-                    <td width="142" style="vertical-align: middle; text-align: center;"><b>Mid September</b></td>
+                    <td width="142"><b>Mid September</b></td>
                   </tr>
                 </tbody>
               </table>
@@ -227,228 +218,106 @@
           <div class="divider-custom-line bg-secondary"></div>
         </div>
 
-        <div class="panel-group" role="tablist" aria-multiselectable="true">
-          <div class="panel accordion panel-default">
-            <div class="panel-heading py-3" role="tab" id="heading3">
-              <h4 class="faq-title">
-                <a
-                  class="lead font-weight-bold"
-                  class="collapsed"
-                  role="button"
-                  data-toggle="collapse"
-                  data-parent="#accordion"
-                  href="#bs-merit-1"
-                  aria-expanded="true"
-                  aria-controls="faq1"
-                >
-                  BS Management and Technology & BS Economics with Data Science
-                  <i class="ml-2 fas fa-lg fa-angle-down rotate-icon"></i>
-                </a>
-              </h4>
+        <form>
+          <div class="form-group row">
+            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
+              >FSC Marks</label
+            >
+            <div class="col-sm-12 col-md-5">
+              <input
+                aria-label="Inter part 1 obtained"
+                type="number"
+                id="part1"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Obtained Marks in FSC"
+                required
+                min="0"
+              />
             </div>
-            <div id="bs-merit-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-              <div class="panel-body px-3 mb-4">
-                <p class="lead font-weight-normal">             
-                  <form>
-                    <div class="form-group row">
-                      <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
-                        >FSC Marks</label
-                      >
-                      <div class="col-sm-12 col-md-5">
-                        <input
-                          aria-label="Inter part 1 obtained"
-                          type="number"
-                          id="bs-merit-1-part1"
-                          class="form-control rounded-sm mb-1 p-4"
-                          placeholder="Obtained Marks in FSC"
-                          required
-                          min="0"
-                        />
-                      </div>
-                      <div class="col-sm-12 col-md-5">
-                        <input
-                          aria-label="Inter part 1 total"
-                          type="number"
-                          id="bs-merit-1-part1Total"
-                          class="form-control rounded-sm mb-1 p-4"
-                          placeholder="Total Marks in FSC"
-                          required
-                          min="0"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
-                        >Matric Marks</label
-                      >
-                      <div class="col-sm-12 col-md-5">
-                        <input
-                          aria-label="Matric obtained"
-                          type="number"
-                          id="bs-merit-1-matric"
-                          class="form-control rounded-sm mb-1 p-4"
-                          placeholder="Obtained Marks in Matric"
-                          required
-                          min="0"
-                        />
-                      </div>
-                      <div class="col-sm-12 col-md-5">
-                        <input
-                          aria-label="Matric total"
-                          type="number"
-                          id="bs-merit-1-matricTotal"
-                          class="form-control rounded-sm mb-1 p-4"
-                          placeholder="Total Marks in Matric"
-                          required
-                          min="0"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
-                        >Interview Marks</label
-                      >
-                      <div class="col-sm-12 col-md-5">
-                        <input
-                          aria-label="ITU/SAT obtained"
-                          type="number"
-                          id="bs-merit-1-interview"
-                          class="form-control rounded-sm mb-1 p-4"
-                          placeholder="Obtained Marks in Interview"
-                          required
-                          min="0"
-                        />
-                      </div>
-                      <div class="col-sm-12 col-md-5">
-                        <input
-                          aria-label="ITU/SAT total"
-                          type="number"
-                          id="bs-merit-1-interviewTotal"
-                          class="form-control rounded-sm mb-1 p-4"
-                          placeholder="Total Marks in Interview"
-                          required
-                          min="0"
-                        />
-                      </div>
-                    </div>
-   
-                    <div class="m-5 text-center">
-                      <button
-                        type="submit"
-                        onclick="calculateBSMerit1(event)"
-                        class="btn btn-primary bg-primary btn-lg rounded-sm text-white"
-                      >
-                        Calculate
-                      </button>
-                    </div>
-                  </form>
-                </p>
-              </div>
+            <div class="col-sm-12 col-md-5">
+              <input
+                aria-label="Inter part 1 total"
+                type="number"
+                id="part1Total"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Total Marks in FSC"
+                required
+                min="0"
+              />
             </div>
           </div>
-          <div class="panel accordion panel-default">
-            <div class="panel-heading py-3" role="tab" id="heading3">
-              <h4 class="faq-title">
-                <a
-                  class="lead font-weight-bold"
-                  class="collapsed"
-                  role="button"
-                  data-toggle="collapse"
-                  data-parent="#accordion"
-                  href="#bs-merit-2"
-                  aria-expanded="true"
-                  aria-controls="bs-merit-2"
-                >
-                  BS Computer Science, BS Electrical Engineering & BS Computer Engineering
-                  <i class="ml-2 fas fa-lg fa-angle-down rotate-icon"></i>
-                </a>
-              </h4>
+          <div class="form-group row">
+            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
+              >Matric Marks</label
+            >
+            <div class="col-sm-12 col-md-5">
+              <input
+                aria-label="Matric obtained"
+                type="number"
+                id="matric"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Obtained Marks in Matric"
+                required
+                min="0"
+              />
             </div>
-            <div id="bs-merit-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-              <div class="panel-body px-3 mb-4">
-                <p class="lead font-weight-normal">
-                  <form>
-                    <div class="form-group row">
-                      <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
-                        >FSC Marks</label
-                      >
-                      <div class="col-sm-12 col-md-5">
-                        <input
-                          aria-label="Inter part 1 obtained"
-                          type="number"
-                          id="bs-merit-2-part1"
-                          class="form-control rounded-sm mb-1 p-4"
-                          placeholder="Obtained Marks in FSC"
-                          required
-                          min="0"
-                        />
-                      </div>
-                      <div class="col-sm-12 col-md-5">
-                        <input
-                          aria-label="Inter part 1 total"
-                          type="number"
-                          id="bs-merit-2-part1Total"
-                          class="form-control rounded-sm mb-1 p-4"
-                          placeholder="Total Marks in FSC"
-                          required
-                          min="0"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
-                        >Matric Marks</label
-                      >
-                      <div class="col-sm-12 col-md-5">
-                        <input
-                          aria-label="Matric obtained"
-                          type="number"
-                          id="bs-merit-2-matric"
-                          class="form-control rounded-sm mb-1 p-4"
-                          placeholder="Obtained Marks in Matric"
-                          required
-                          min="0"
-                        />
-                      </div>
-                      <div class="col-sm-12 col-md-5">
-                        <input
-                          aria-label="Matric total"
-                          type="number"
-                          id="bs-merit-2-matricTotal"
-                          class="form-control rounded-sm mb-1 p-4"
-                          placeholder="Total Marks in Matric"
-                          required
-                          min="0"
-                        />
-                      </div>
-                    </div>
-               
-                    <div class="m-5 text-center">
-                      <button
-                        type="submit"
-                        onclick="calculateBSMerit2(event)"
-                        class="btn btn-primary bg-primary btn-lg rounded-sm text-white"
-                      >
-                        Calculate
-                      </button>
-                    </div>
-                  </form>
-                </p>
-              </div>
+            <div class="col-sm-12 col-md-5">
+              <input
+                aria-label="Matric total"
+                type="number"
+                id="matricTotal"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Total Marks in Matric"
+                required
+                min="0"
+              />
             </div>
           </div>
-        </div>
-
-        <div class="py-3">
-          <div class="font-weight-bolder">
+          <div class="form-group row">
+            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
+              >ITU/SAT Marks</label
+            >
+            <div class="col-sm-12 col-md-5">
+              <input
+                aria-label="ITU/SAT obtained"
+                type="number"
+                id="BSTest"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Obtained Marks in ITU/SAT"
+                required
+                min="0"
+              />
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <input
+                aria-label="ITU/SAT total"
+                type="number"
+                id="BSTestTotal"
+                class="form-control rounded-sm mb-1 p-4"
+                placeholder="Total Marks in ITU/SAT"
+                required
+                min="0"
+              />
+            </div>
+          </div>
+          <div id="BSResult" class="text-center"></div>
+          <div class="m-5 text-center">
+            <button
+              type="submit"
+              onclick="calculateBSMerit(event)"
+              class="btn btn-primary bg-primary btn-lg rounded-sm text-white"
+            >
+              Calculate
+            </button>
+          </div>
+        </form>
+        <div class="font-weight-bolder">
           Note: There will be 2% deduction from Academic Marks for each late session for up to 5 late sessions.
-          </div>
-          <br />
-          <div class="font-italic">
-            Last Updated: July, 2020
-          </div>
         </div>
-        <div id="BSResult" class="text-center"></div>
+        <br />
+        <div class="font-italic">
+          Last Updated: June, 2020
+        </div>
       </div>
     </section>
 
@@ -552,116 +421,10 @@
         </form>
         <br />
         <div class="font-italic">
-          Last Updated: June, 2019
-        </div>
-      </div>
-    </section>
-<!--
-    <section id="phd" class="page-section bg-secondary text-white mb-0">
-      <div class="container">
-      
-        <div class="text-center">
-          <h2 class="page-section-heading d-inline-block text-white">PhD Merit</h2>
-        </div>
-       
-        <div class="divider-custom divider-light">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-          <div class="divider-custom-line"></div>
-        </div>
-
-        <form>
-          <div class="form-group row">
-            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
-              >Undergraduate CGPA</label
-            >
-            <div class="col-sm-12 col-md-10">
-              <input
-                aria-label="Undergraduate obtained GPA"
-                type="number"
-                id="undergrad"
-                class="form-control rounded-sm mb-1 p-4"
-                placeholder="Undergraduate CGPA (out of 4.0)"
-                required
-                min="0"
-                max="4.0"
-                step="0.01"
-              />
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
-              >ITU Test Marks</label
-            >
-            <div class="col-sm-12 col-md-5">
-              <input
-                aria-label="MS test obtained"
-                type="number"
-                id="MSTest"
-                class="form-control rounded-sm mb-1 p-4"
-                placeholder="Obtained Marks in ITU Test"
-                required
-                min="0"
-              />
-            </div>
-            <div class="col-sm-12 col-md-5">
-              <input
-                aria-label="MS test total"
-                type="number"
-                id="MSTestTotal"
-                class="form-control rounded-sm mb-1 p-4"
-                placeholder="Total Marks in ITU Test"
-                required
-                min="0"
-              />
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="col-sm-12 col-md-2 text-center align-self-center col-form-label font-weight-bold"
-              >Interview Marks</label
-            >
-            <div class="col-sm-12 col-md-5">
-              <input
-                aria-label="Interview obtained"
-                type="number"
-                id="interview"
-                class="form-control rounded-sm mb-1 p-4"
-                placeholder="Obtained Marks in Interview"
-                required
-                min="0"
-                step="0.1"
-              />
-            </div>
-            <div class="col-sm-12 col-md-5">
-              <input
-                aria-label="Interview total"
-                type="number"
-                id="interviewTotal"
-                class="form-control rounded-sm mb-1 p-4"
-                placeholder="Total Marks in Interview"
-                required
-                min="0"
-              />
-            </div>
-          </div>
-          <div id="MSResult" class="text-center"></div>
-          <div class="m-5 text-center">
-            <button
-              type="submit"
-              onclick="calculatePhDMerit(event)"
-              class="btn btn-primary bg-primary btn-lg rounded-sm text-white"
-            >
-              Calculate
-            </button>
-          </div>
-        </form>
-        <br />
-        <div class="font-italic">
           Last Updated: June, 2020
         </div>
       </div>
-    </section> 
-  -->
+    </section>
 
     <section class="page-section" id="help">
       <div class="container">
