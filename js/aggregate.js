@@ -42,37 +42,49 @@ function calculateBSMerit2(event) {
 }
 
 function calculateMSMerit(event) {
-  var undergrad = parseFloat(document.getElementById('undergrad').value);
+  var undergrad = parseFloat(document.getElementById('ms-merit-undergrad').value);
   var undergradTotal = 4.0;
-  var interview = parseFloat(document.getElementById('interview').value);
-  var interviewTotal = parseFloat(document.getElementById('interviewTotal').value);
-  var MSTest = parseInt(document.getElementById('MSTest').value);
-  var MSTestTotal = parseInt(document.getElementById('MSTestTotal').value);
+  var interview = parseFloat(document.getElementById('ms-merit-interview').value);
+  var interviewTotal = parseFloat(document.getElementById('ms-merit-interviewTotal').value);
 
-  if (isNaN(undergrad) || isNaN(interview) || isNaN(interviewTotal) || isNaN(MSTest) || isNaN(MSTestTotal)) {
+  if (isNaN(undergrad) || isNaN(interview) || isNaN(interviewTotal)) {
     console.log('something went wrong');
   } else {
     event.preventDefault();
-    var sum =
-      (0.4 * (undergrad / undergradTotal) + 0.2 * (interview / interviewTotal) + 0.4 * (MSTest / MSTestTotal)) * 100;
+    var sum = (0.8 * (undergrad / undergradTotal) + 0.2 * (interview / interviewTotal)) * 100;
     $('#MSResult').html('<h3 class="mt-5 text-primary">Your Aggregate = ' + sum.toFixed(2) + '% </h3>');
+    $('html, body').animate({ scrollTop: $('#MSResult').offset().top - 150 }, 1000);
   }
 }
 
 function calculatePhDMerit(event) {
-  var undergrad = parseFloat(document.getElementById('undergrad').value);
+  var undergrad = parseFloat(document.getElementById('phd-merit-undergrad').value);
   var undergradTotal = 4.0;
-  var interview = parseFloat(document.getElementById('interview').value);
-  var interviewTotal = parseFloat(document.getElementById('interviewTotal').value);
-  var MSTest = parseInt(document.getElementById('MSTest').value);
-  var MSTestTotal = parseInt(document.getElementById('MSTestTotal').value);
+  var grad = parseFloat(document.getElementById('phd-merit-grad').value);
+  var gradTotal = 4.0;
+  var interview = parseFloat(document.getElementById('phd-merit-interview').value);
+  var interviewTotal = parseFloat(document.getElementById('phd-merit-interviewTotal').value);
+  var phdTest = parseInt(document.getElementById('phd-merit-PhdTest').value);
+  var phdTestTotal = parseInt(document.getElementById('phd-merit-PhdTestTotal').value);
 
-  if (isNaN(undergrad) || isNaN(interview) || isNaN(interviewTotal) || isNaN(MSTest) || isNaN(MSTestTotal)) {
+  if (
+    isNaN(undergrad) ||
+    isNaN(grad) ||
+    isNaN(interview) ||
+    isNaN(interviewTotal) ||
+    isNaN(phdTest) ||
+    isNaN(phdTestTotal)
+  ) {
     console.log('something went wrong');
   } else {
     event.preventDefault();
     var sum =
-      (0.4 * (undergrad / undergradTotal) + 0.2 * (interview / interviewTotal) + 0.4 * (MSTest / MSTestTotal)) * 100;
-    $('#MSResult').html('<h3 class="mt-5 text-primary">Your Aggregate = ' + sum.toFixed(2) + '% </h3>');
+      (0.2 * (undergrad / undergradTotal) +
+        0.2 * (grad / gradTotal) +
+        0.2 * (interview / interviewTotal) +
+        0.4 * (phdTest / phdTestTotal)) *
+      100;
+    $('#PhDResult').html('<h3 class="mt-5 text-primary">Your Aggregate = ' + sum.toFixed(2) + '% </h3>');
+    $('html, body').animate({ scrollTop: $('#PhDResult').offset().top - 150 }, 1000);
   }
 }
