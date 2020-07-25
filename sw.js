@@ -1,5 +1,5 @@
 var APP_PREFIX = 'ITU_MERIT_CALCULATOR';
-var VERSION = 'Version_2.2';
+var VERSION = 'Version_2.3';
 var CACHE_NAME = APP_PREFIX + '-' + VERSION;
 var URLS = [
   '/itu-merit-calculator/index.html',
