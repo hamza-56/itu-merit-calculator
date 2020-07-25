@@ -61,3 +61,10 @@
 .profile-link:hover {
   color: #f99d20;
 }
+
+@media only screen and (max-width: 600px) {
+  .admtable {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+  }
+}
