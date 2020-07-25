@@ -1,5 +1,6 @@
+var DEBUG = false;
 var APP_PREFIX = 'ITU_MERIT_CALCULATOR';
-var VERSION = 'Version_2.3';
+var VERSION = 'Version_2.4';
 var CACHE_NAME = APP_PREFIX + '-' + VERSION;
 var URLS = [
   '/itu-merit-calculator/index.html',
@@ -15,21 +16,24 @@ var URLS = [
   '/itu-merit-calculator/js/scripts.js',
   '/itu-merit-calculator/js/aggregate.js',
 
+  '/itu-merit-calculator/assets/img/slides/admissions-3.jpg',
+  '/itu-merit-calculator/assets/img/slides/itu-1.jpg',
+
   '/itu-merit-calculator/manifest.json',
 ];
 
 // Respond with cached resources
 self.addEventListener('fetch', function (e) {
-  console.log('fetch request: ' + e.request.url);
+  print('fetch request: ' + e.request.url);
   e.respondWith(
     caches.match(e.request).then(function (request) {
       if (request) {
         // if cache is available, respond with cache
-        console.log('responding with cache: ' + e.request.url);
+        print('responding with cache: ' + e.request.url);
         return request;
       } else {
         // if there are no cache, try fetching request
-        console.log('file is not cached, fetching: ' + e.request.url);
+        print('file is not cached, fetching: ' + e.request.url);
         return fetch(e.request);
       }
     })
@@ -40,7 +44,7 @@ self.addEventListener('fetch', function (e) {
 self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
-      console.log('installing cache: ' + CACHE_NAME);
+      print('installing cache: ' + CACHE_NAME);
       return cache.addAll(URLS);
     })
   );
@@ -61,7 +65,7 @@ self.addEventListener('activate', function (e) {
       return Promise.all(
         keyList.map(function (key, i) {
           if (cacheWhitelist.indexOf(key) === -1) {
-            console.log('deleting cache: ' + keyList[i]);
+            print('deleting cache: ' + keyList[i]);
             return caches.delete(keyList[i]);
           }
         })
@@ -69,3 +73,9 @@ self.addEventListener('activate', function (e) {
     })
   );
 });
+
+function print(arg) {
+  if (DEBUG) {
+    console.log(arg);
+  }
+}
