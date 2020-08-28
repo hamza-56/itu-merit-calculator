@@ -18,9 +18,15 @@ function calculateBSMerit1(event) {
   } else {
     event.preventDefault();
     var sum = (0.32 * (matric / matricTotal) + 0.48 * (part1 / part1Total) + 0.2 * (interview / interviewTotal)) * 100;
-    $('#BSResult').html('<h3 class="mt-5 text-primary">Your Aggregate for BSM&T/BSEDS= ' + sum.toFixed(2) + '% </h3>');
+    $('#BSResult').html('<h3 class="mt-5 text-primary">Your Aggregate for BSMT/BSEDS= ' + sum.toFixed(2) + '% </h3>');
     $('html, body').animate({ scrollTop: $('#BSResult').offset().top - 150 }, 1000, 'easeInOutExpo');
   }
+
+  gtag('event', 'BSMT/BSEDS Merit', {
+    event_category: 'Merit Calculation',
+    event_label: 'BSMT/BSEDS',
+    value: sum.toFixed(2),
+  });
 }
 
 function calculateBSMerit2(event) {
@@ -39,6 +45,12 @@ function calculateBSMerit2(event) {
     );
     $('html, body').animate({ scrollTop: $('#BSResult').offset().top - 150 }, 1000, 'easeInOutExpo');
   }
+
+  gtag('event', 'BSCS/BSEE/BSCE Merit', {
+    event_category: 'Merit Calculation',
+    event_label: 'BSCS/BSEE/BSCE',
+    value: sum.toFixed(2),
+  });
 }
 
 function calculateMSMerit(event) {
@@ -55,6 +67,12 @@ function calculateMSMerit(event) {
     $('#MSResult').html('<h3 class="mt-5 text-primary">Your Aggregate = ' + sum.toFixed(2) + '% </h3>');
     $('html, body').animate({ scrollTop: $('#MSResult').offset().top - 150 }, 1000, 'easeInOutExpo');
   }
+
+  gtag('event', 'MS Merit', {
+    event_category: 'Merit Calculation',
+    event_label: 'MS',
+    value: sum.toFixed(2),
+  });
 }
 
 function calculatePhDMerit(event) {
@@ -87,4 +105,10 @@ function calculatePhDMerit(event) {
     $('#PhDResult').html('<h3 class="mt-5 text-primary">Your Aggregate = ' + sum.toFixed(2) + '% </h3>');
     $('html, body').animate({ scrollTop: $('#PhDResult').offset().top - 150 }, 1000, 'easeInOutExpo');
   }
+
+  gtag('event', 'PhD Merit', {
+    event_category: 'Merit Calculation',
+    event_label: 'PhD',
+    value: sum.toFixed(2),
+  });
 }
